@@ -1,11 +1,11 @@
 
 <div class="card"> 
-      <img src="../assets/gulp-logo.png" class="card-img-top p-2"/>
+      <img [src]="imageUrl" class="card-img-top p-2"/>
 
   <div class="card-body">
-    <h5 class="card-title">Neat Tree</h5>
-    <p class="card-subtitle mb-2">@nature</p>
-    <div class="card-text">Saw this awesome tree during my hike today.</div>
+    <h5 class="card-title">{{ title }}</h5>
+    <p class="card-subtitle mb-2">@{{ username }}</p>
+    <div class="card-text">{{ content }}</div>
   </div>
   
 </div>
