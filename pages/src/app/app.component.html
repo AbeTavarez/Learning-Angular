@@ -21,6 +21,17 @@
 </nav>
 
 <!-- Displaying -->
+<div [ngSwitch]="currentPage">
+  <div *ngSwitchCase="0">
+    Current Page is Zero
+  </div>
+  <div *ngSwitchCase="">
+    Current Page is One
+  </div>
+  <div *ngSwitchDefault>
+    Unknown current page!
+  </div>
+</div>
 
 <div>
   <h4>{{ images[currentPage].title }}</h4>
